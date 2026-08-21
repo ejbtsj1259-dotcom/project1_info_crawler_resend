@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT 및 과학 정책 뉴스 일간 추천 리포트</title>
+    <style>
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            background-color: #f4f6f9;
+            color: #1e293b;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            max-width: 680px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: #ffffff;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .hero p {
+            margin: 10px 0 0 0;
+            font-size: 15px;
+            opacity: 0.9;
+        }
+        .meta-info {
+            background-color: #f8fafc;
+            padding: 15px 30px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 13px;
+            color: #64748b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content {
+            padding: 30px;
+        }
+        .news-card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 22px;
+            margin-bottom: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .news-card:hover {
+            box-shadow: 0 6px 12px rgba(0,0,0,0.04);
+            border-color: #cbd5e1;
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 12px;
+            font-size: 12px;
+        }
+        .rank-num {
+            background-color: #1e293b;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .score-badge {
+            background-color: #fffbeb;
+            color: #b45309;
+            border: 1px solid #fde68a;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .source-tag {
+            background-color: #f1f5f9;
+            color: #334155;
+            font-weight: 500;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .date-tag {
+            color: #94a3b8;
+            margin-left: auto;
+        }
+        .news-title {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        .news-title a {
+            color: #1e3a8a;
+            text-decoration: none;
+        }
+        .news-title a:hover {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+        .news-summary {
+            margin: 0 0 16px 0;
+            font-size: 14px;
+            color: #475569;
+            text-align: justify;
+        }
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px dashed #e2e8f0;
+            padding-top: 12px;
+        }
+        .category-list {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+        .badge {
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        .badge-tech {
+            background-color: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+        }
+        .btn-link {
+            color: #2563eb;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .btn-link:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background-color: #1e293b;
+            color: #94a3b8;
+            padding: 30px;
+            text-align: center;
+            font-size: 12px;
+            border-top: 1px solid #334155;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .footer a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>🚀 IT & 과학 정책 뉴스 추천 리포트</h1>
+            <p>오늘 수집된 과기정통부, KISA, 전자신문 기사 중 추천 지수가 가장 높은 뉴스들입니다.</p>
+        </div>
+        
+        <!-- Metadata -->
+        <div class="meta-info">
+            <span>발송 모드: <strong>미리보기(Preview) 모드</strong></span>
+            <span>수집 일시: <strong>2026년 8월 20일</strong></span>
+        </div>
+        
+        <!-- News List Content -->
+        <div class="content">
+            
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#1</span>
+                <span class="score-badge">🔥 80점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-20</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260820000024" target="_blank">AI 에이전트 시대 데이터 해법은…'AI Ready Data 2026' 9월 3일 개최</a>
+            </h3>
+            <p class="news-summary">인공지능(AI) 에이전트 시대를 맞아 기업과 공공기관 데이터 전략과 온톨로지·지식그래프 활용 방안을 모색하는 'AI Ready Data 2026' 세미나가 오는 9월 3일 서울 포스코타워 역삼 이벤트홀에서 열린다. 생성형 AI와 AI 에이전트 도입이 확산하면서 기업 관심도 단순한 AI 모델 활용에서 'AI가 실제 업무에 활용할 수 있는 데이터와 지식체계를 ...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">데이터</span><span class="badge badge-tech">AI / 생성형 AI</span>
+                </div>
+                <a href="https://www.etnews.com/20260820000024" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#2</span>
+                <span class="score-badge">🔥 77점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-19</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260820000003" target="_blank">클라우데라, '애니웨어 클라우드' 출시...멀티클라우드·온프레미스 아우르는 AI 플랫폼</a>
+            </h3>
+            <p class="news-summary">클라우데라가 퍼블릭 클라우드와 온프레미스를 가리지 않고 한 곳에서 AI 애플리케이션을 만들고 운영할 수 있는 새 플랫폼 '클라우데라 애니웨어 클라우드'를 20일 공개했다. 플랫폼의 핵심은 '데이터를 옮기지 않는다'는 점이다. 기업이 갖고 있는 데이터를 그대로 둔 채, 데이터가 있는 위치에서 곧바로 AI 워크플로우를 자동화하고 고급 기능을 실행할 수 있도록 ...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">자동화</span><span class="badge badge-tech">데이터</span><span class="badge badge-tech">AI / 생성형 AI</span><span class="badge badge-tech">클라우드</span>
+                </div>
+                <a href="https://www.etnews.com/20260820000003" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#3</span>
+                <span class="score-badge">🔥 75점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-20</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260820000226" target="_blank">클라우데라, 클라우드·인프라 경계 허물었다...통합 데이터 플랫폼 '애니웨어 클라우드' 공개</a>
+            </h3>
+            <p class="news-summary">데이터 플랫폼 기업이 인공지능(AI) 시대 표준 자리를 놓고 다투는 가운데, 클라우데라가 퍼블릭·프라이빗 클라우드, 온프레미스를 가리지 않는 통합 플랫폼을 내놨다. 데이터 인프라 환경의 복잡성으로 인해 AI 활용에 어려움을 겪는 기업의 고민을 해결하겠다는 전략이다. 클라우데라는 20일 싱가포르에서 열린 연례 컨퍼런스 '클라우데라 이볼브 2026'에서 데이터...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">보안</span><span class="badge badge-tech">클라우드</span><span class="badge badge-tech">데이터</span><span class="badge badge-tech">AI / 생성형 AI</span>
+                </div>
+                <a href="https://www.etnews.com/20260820000226" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#4</span>
+                <span class="score-badge">🔥 73점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-11</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260811000261" target="_blank">보안 특화 AI '2파전'…네이버클라우드-SKT 격돌</a>
+            </h3>
+            <p class="news-summary">정부가 추진하는 사이버보안 특화 인공지능(AI) 파운데이션 모델 개발 사업을 두고 네이버클라우드와 SK텔레콤이 맞붙을 전망이다. 해외 최신 AI 접근 제약이 있는 상황에서 취약점 진단을 위한 특화 AI 모델 확보에 속도가 붙을 것으로 보인다. 11일 업계에 따르면 SK텔레콤과 네이버클라우드는 과학기술정보통신부가 추진하는 '특화 인공지능 파운데이션 모델 개발...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">보안</span><span class="badge badge-tech">클라우드</span><span class="badge badge-tech">AI / 생성형 AI</span><span class="badge badge-tech">자동화</span><span class="badge badge-tech">데이터</span>
+                </div>
+                <a href="https://www.etnews.com/20260811000261" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#5</span>
+                <span class="score-badge">🔥 67점</span>
+                <span class="source-tag">과학기술정보통신부</span>
+                <span class="date-tag">2026-08-01</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.msit.go.kr/bbs/view.do?sCode=user&bbsSeqNo=94&nttSeqNo=3187671" target="_blank">국민의 아이디어를 인공지능 서비스로 구현, 「모두의 인공지능(AI) 실험실 인공지능(AI) 서비스 경진대회」 개최</a>
+            </h3>
+            <p class="news-summary">​- 국민 누구나 인공지능으로 일상·지역·사회문제 해결에 도전…8월 18일부터 참가자 모집&nbsp; - 본선 진출 10개 팀에 국내 주요 인공지능(AI)·정보 기술(IT)&nbsp;기업 전문가 지도·상담(코칭·멘토링) 등 집중 지원 …총상금 2,600만 원, 우수 서비스의 사업화·창업까지 후속지원 <!--[data-hwpjson]{
+"documentPr"...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">AI / 생성형 AI</span>
+                </div>
+                <a href="https://www.msit.go.kr/bbs/view.do?sCode=user&bbsSeqNo=94&nttSeqNo=3187671" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#6</span>
+                <span class="score-badge">🔥 62점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-18</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260818000262" target="_blank">포티넷, AI 보안 스타트업 '버추 AI' 인수</a>
+            </h3>
+            <p class="news-summary">포티넷이 인공지능(AI) 보안 스타트업 '버추(Virtue) AI'를 인수했다. AI 모델과 애플리케이션, 자율형 AI 에이전트의 개발 단계부터 실제 운영 환경까지 보호하는 역량을 강화하기 위한 조치다. 포티넷은 17일(현지시간) AI 런타임 보호와 자동화된 AI 검증 기술을 보유한 버추 AI 인수를 완료했다고 밝혔다. 인수 금액을 포함한 구체적인 재무 조...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">보안</span><span class="badge badge-tech">자동화</span><span class="badge badge-tech">데이터</span><span class="badge badge-tech">AI / 생성형 AI</span>
+                </div>
+                <a href="https://www.etnews.com/20260818000262" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#7</span>
+                <span class="score-badge">🔥 62점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-18</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260818000121" target="_blank">카스퍼스키, AI 에이전트 보안검사 기능 출시…'섀도 AI' 대응</a>
+            </h3>
+            <p class="news-summary">카스퍼스키는 인공지능(AI) 에이전트, AI 모델, 에이전트 스킬에 포함된 악성코드·백도어를 검사하는 기능을 출시했다고 18일 밝혔다. 카스퍼스키는 악성코드 탐지와 위협 분석, 엔드포인트 보호 등을 제공하는 글로벌 사이버 보안 기업이다. 이번 기능은 기업 내부에서 승인받지 않은 AI를 사용하는 '섀도 AI(Shadow AI)'가 확산하면서 AI 구성요소를 ...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">보안</span><span class="badge badge-tech">데이터</span><span class="badge badge-tech">AI / 생성형 AI</span>
+                </div>
+                <a href="https://www.etnews.com/20260818000121" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#8</span>
+                <span class="score-badge">🔥 58점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-19</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260819000134" target="_blank">통신 3사 '모두의AI' 출사표…“국민 모두에게 AI 혜택 제공”</a>
+            </h3>
+            <p class="news-summary">통신 3사가 대국민 인공지능(AI) 서비스 개발 사업인 '모두의 AI 프로젝트'에 도전한다. 독자 AI 모델을 바탕으로 인프라, 서비스 분야 전문기업과 연합전선을 구축해 수주에 총력을 기울인다. SK텔레콤, KT, LG유플러스는 과학기술정보통신부 '모두의 AI 프로젝트' 공모에 참여했다고 19일 밝혔다. 모두의 AI 사업은 국민 누구나 제한 없이 쓸 수 있...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">AI / 생성형 AI</span>
+                </div>
+                <a href="https://www.etnews.com/20260819000134" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#9</span>
+                <span class="score-badge">🔥 56점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-19</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260819000042" target="_blank">[전문가 기고] AI와 로봇산업하기 좋은 경기도 만들기</a>
+            </h3>
+            <p class="news-summary">2002년 취임한 손학규 경기지사는 '기업하기 좋은 경기도'를 내걸었다. 그 문장은 2004년 판교 IT밸리 사업 인가와 2006년 착공으로 이어졌다. 20여년이 지난 지금 판교테크노밸리에는 1780개 기업과 8만3000여명의 임직원이 일한다. 도시의 운명은 한 세대 앞을 내다본 선언과 이를 끝까지 실행하는 힘에서 갈린다. 싱가포르는 그 원리를 극적으로 보...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">자동화</span><span class="badge badge-tech">데이터</span><span class="badge badge-tech">AI / 생성형 AI</span><span class="badge badge-tech">클라우드</span>
+                </div>
+                <a href="https://www.etnews.com/20260819000042" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#10</span>
+                <span class="score-badge">🔥 56점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-14</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260814000111" target="_blank">엔텔스, 차세대 빌링 솔루션 '포사빌링' 개발…“클라우드·AI 데이터센터 공략”</a>
+            </h3>
+            <p class="news-summary">AX 솔루션 기업인 엔텔스(대표 최일규)는 클라우드와 AI 데이터센터 시장을 겨냥한 빌링 솔루션 '포사빌링(FOSSA Billing)'을 출시했다고 14일 밝혔다. 서비스형 소프트웨어(SaaS)로 만들어진 이 솔루션은 클라우드나 데이터센터 사용량에 맞게 과금과 결제를 지원하는 것이다. 일례로 소프트웨어 업체인 A사가 고객사인 B사에 클라우드 기반으로 SW를...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">보안</span><span class="badge badge-tech">클라우드</span><span class="badge badge-tech">데이터</span><span class="badge badge-tech">AI / 생성형 AI</span>
+                </div>
+                <a href="https://www.etnews.com/20260814000111" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#11</span>
+                <span class="score-badge">🔥 55점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-12</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260812000388" target="_blank">LG도 보안 특화 AI 출사표…엑사원 기반 컨소시엄 추진</a>
+            </h3>
+            <p class="news-summary">LG그룹이 정부의 보안 특화 인공지능(AI) 모델 개발 사업 참여를 추진한다. LG AI연구원의 초거대 AI 모델 '엑사원(EXAONE)'을 기반이다. 네이버클라우드와 SK텔레콤이 각각 컨소시엄 구성을 추진하고 있는 가운데 LG까지 가세하면서 경쟁이 본격화하는 모습이다. 12일 관련 업계에 따르면 LG CNS, LG AI연구원, LG유플러스 등은 과학기술정...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">보안</span><span class="badge badge-tech">클라우드</span><span class="badge badge-tech">데이터</span><span class="badge badge-tech">AI / 생성형 AI</span>
+                </div>
+                <a href="https://www.etnews.com/20260812000388" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#12</span>
+                <span class="score-badge">🔥 55점</span>
+                <span class="source-tag">과학기술정보통신부</span>
+                <span class="date-tag">2026-08-01</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.msit.go.kr/bbs/view.do?sCode=user&bbsSeqNo=94&nttSeqNo=3187649" target="_blank">4개 정예팀의 독자 인공지능 기초 모형(AI 파운데이션 모델) 모두,미국 Epoch AI의 주목할만한 인공지능 모델로 등재</a>
+            </h3>
+            <p class="news-summary">- 올 상반기 간 개발하여 성능을 한 단계 도약시킨 독자 인공지능&nbsp;모델 성과 인정 <!--[data-hwpjson]{
+"documentPr": {
+"di": "",
+"dp": {
+"dn": "test.hwp",
+"ta": 1,
+"d1": 5,
+"d2": 1,
+"dv": 0,
+"dr": 1,
+"do": 1,
+"vj": "1.1",
+"an": "Han...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">AI / 생성형 AI</span>
+                </div>
+                <a href="https://www.msit.go.kr/bbs/view.do?sCode=user&bbsSeqNo=94&nttSeqNo=3187649" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#13</span>
+                <span class="score-badge">🔥 53점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-20</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260820000250" target="_blank">오픈AI '챗GPT 워크', 업무 넘어 연구보고서 작성도 지원</a>
+            </h3>
+            <p class="news-summary">오픈AI가 인공지능(AI) 에이전트의 활용 범위를 업무 자동화에서 연구보고서와 자료집 초안 작성 등 지식 업무로 넓히고 있다. 오픈AI는 20일 서울 삼성동 한국오피스에서 '챗GPT 워크 미디어 데모 세션'을 열고 기업은 물론 대학 내 연구에도 업무용 AI 에이전트 도구인 '챗GPT 워크'를 활용한 사례를 공유했다. 챗GPT 워크는 오픈AI 코딩 에이전트 ...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">보안</span><span class="badge badge-tech">자동화</span><span class="badge badge-tech">데이터</span><span class="badge badge-tech">AI / 생성형 AI</span>
+                </div>
+                <a href="https://www.etnews.com/20260820000250" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#14</span>
+                <span class="score-badge">🔥 51점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-19</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260819000020" target="_blank">KT, 국산 NPU·LLM 결합 'NPU LLM 스테이션' 출시</a>
+            </h3>
+            <p class="news-summary">KT가 국산 인공지능(AI) 반도체와 자체 대규모언어모델(LLM)을 결합한 기업용 AI 어플라이언스를 출시했다. 내부망에서 데이터와 AI 연산을 처리해 보안 규제가 높은 공공·금융·국방 등 산업의 AI 전환 수요를 공략할 방침이다. KT는 리벨리온의 신경망처리장치(NPU) 'ATOM-MAX'와 자체 개발 LLM '믿음 K 2.5 프로', 운영 API 플랫폼...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">보안</span><span class="badge badge-tech">클라우드</span><span class="badge badge-tech">AI / 생성형 AI</span><span class="badge badge-tech">자동화</span><span class="badge badge-tech">데이터</span>
+                </div>
+                <a href="https://www.etnews.com/20260819000020" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#15</span>
+                <span class="score-badge">🔥 50점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-20</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260820000062" target="_blank">AWS, '피지컬 AI 프론티어 프로그램' 출시…국내 기업 15개사 참여</a>
+            </h3>
+            <p class="news-summary">AWS가 국내 기업의 로보틱스·자율주행·산업 자동화 등 피지컬 AI 솔루션 개발부터 상용화까지 지원하며 관련 생태계 육성에 나선다. 20일 아마존웹서비스(이하 AWS)는 피지컬 AI 육성 프로그램인 'AWS 코리아 피지컬 AI 프론티어 프로그램'을 발표했다. AWS 서밋 서울 2026에서 처음 공개된 이 프로그램은 2026년 7월부터 12월까지 6개월간 진...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">자동화</span><span class="badge badge-tech">데이터</span><span class="badge badge-tech">AI / 생성형 AI</span><span class="badge badge-tech">클라우드</span>
+                </div>
+                <a href="https://www.etnews.com/20260820000062" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#16</span>
+                <span class="score-badge">🔥 49점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-20</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260820000362" target="_blank">마키나락스, AI 컨퍼런스 '어텐션' 9월 개최…“AI 주권 확보해야”</a>
+            </h3>
+            <p class="news-summary">마키나락스가 산업 현장의 인공지능(AI) 적용 사례와 피지컬 AI 전략을 공유하는 컨퍼런스 '어텐션 2026'을 개최한다. 올해 3회째를 맞는 어텐션은 마키나락스 연례 플래그십 AI 컨퍼런스다. 오는 9월 3일 서울 강남구 웨스틴 서울 파르나스에서 'AI, 현장에 착륙하다'를 주제로 열린다. 윤성호 마키나락스 대표가 산업 현장에서 소버린 AI 필요성을 발표...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">자동화</span><span class="badge badge-tech">AI / 생성형 AI</span><span class="badge badge-tech">클라우드</span>
+                </div>
+                <a href="https://www.etnews.com/20260820000362" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#17</span>
+                <span class="score-badge">🔥 48점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-11</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260811000230" target="_blank">[보안칼럼] 보안의 'Stage 0', 보안자산을 정의하는 일</a>
+            </h3>
+            <p class="news-summary">보안취약점 진단은 국내 정보보호 초창기부터 이어져 온 오래된 주제지만 여전히 현재 진행형인 과제다. 위협의 수준이 달라진 만큼 '무엇을 보호해야 하는가'라는 질문부터 다시 던져야 할 시점이다. 전통적으로 정보기술(IT) 부서는 서버와 네트워크 장비, PC 같은 물리적 장비를 재무 관점의 자산으로 관리해 왔다. 자산관리 대장에는 장비 모델명과 구매일, 유지보...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">보안</span><span class="badge badge-tech">클라우드</span><span class="badge badge-tech">데이터</span><span class="badge badge-tech">AI / 생성형 AI</span>
+                </div>
+                <a href="https://www.etnews.com/20260811000230" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#18</span>
+                <span class="score-badge">🔥 46점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-19</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260819000275" target="_blank">넥써쓰, 자체 개발 AI 솔루션 11종 한자리에... 'AI 랩스' 포털 오픈</a>
+            </h3>
+            <p class="news-summary">넥써쓰(205500)가 자체 개발한 인공지능(AI) 솔루션을 한곳에서 확인할 수 있는 '넥써쓰 AI 랩스' 포털을 열고 AI 전환(AX) 사업 확대에 나선다. 넥써쓰는 자체 개발 AI 솔루션 11종을 모은 넥써쓰 AI 랩스를 오픈했다고 19일 밝혔다. AI 연구를 논문이나 기술 시연에 그치지 않고 실제 업무와 콘텐츠 제작 등에 활용할 수 있는 제품으로 구현...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">보안</span><span class="badge badge-tech">자동화</span><span class="badge badge-tech">AI / 생성형 AI</span>
+                </div>
+                <a href="https://www.etnews.com/20260819000275" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#19</span>
+                <span class="score-badge">🔥 46점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-19</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260819000077" target="_blank">라온시큐어, 업스테이지 '독파모' 컨소 합류…AI 보안 맡아</a>
+            </h3>
+            <p class="news-summary">라온시큐어가 업스테이지가 주도하는 '독자 AI 파운데이션 모델 프로젝트(독파모)' 컨소시엄에 보안 분야 파트너로 합류한다고 19일 밝혔다. 업스테이지는 지난 18일 과학기술정보통신부의 독파모 2차 단계평가를 통과해 최종 3차 프로젝트에 진출했다. 이번 평가를 통과한 팀은 업스테이지와 SK텔레콤, LG AI연구원 등 3곳이다. 정부는 3차 평가를 거쳐 최종 ...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">보안</span><span class="badge badge-tech">자동화</span><span class="badge badge-tech">AI / 생성형 AI</span>
+                </div>
+                <a href="https://www.etnews.com/20260819000077" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+
+        <div class="news-card">
+            <div class="card-header">
+                <span class="rank-num">#20</span>
+                <span class="score-badge">🔥 45점</span>
+                <span class="source-tag">전자신문</span>
+                <span class="date-tag">2026-08-20</span>
+            </div>
+            <h3 class="news-title">
+                <a href="https://www.etnews.com/20260820000308" target="_blank">이스트소프트, 국민 AI 비서 '알비서'로 모두의 AI 사업 도전</a>
+            </h3>
+            <p class="news-summary">이스트소프트가 대국민 인공지능(AI) 비서 '알비서(가칭)'를 중심으로 '모두의 AI' 프로젝트에 도전장을 냈다. 알비서는 복잡한 AI를 누구나 쉽게 사용할 수 있게 이스트소프트가 올해 상반기부터 준비해온 설치형 AI 에이전트 서비스다. 범용 AI부터 특화 서비스까지 하나로 연결, 웹·모바일·PC 등 다양한 환경에서 질문·검색·글쓰기 등 범용 AI 챗봇 기...</p>
+            <div class="card-footer">
+                <div class="category-list">
+                    <span class="badge badge-tech">보안</span><span class="badge badge-tech">AI / 생성형 AI</span>
+                </div>
+                <a href="https://www.etnews.com/20260820000308" class="btn-link" target="_blank">본문 바로가기 ↗</a>
+            </div>
+        </div>
+        
+        </div>
+        
+        <!-- Email Footer -->
+        <div class="footer">
+            <p>본 메일은 수강생 전용 프로젝트 실습을 위한 <strong>일간 자동 뉴스 요약 리포트</strong>입니다.</p>
+            <p>수집 출처: 과학기술정보통신부, 한국인터넷진흥원(KISA), 전자신문</p>
+            <p>© 2026 IT 뉴스 큐레이터 프로젝트. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
